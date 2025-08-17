@@ -43,6 +43,49 @@ h1 {
   line-height: 1.6;
 }
 
+.team-names {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.team-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.team-input label {
+  font-weight: 600;
+  color: #2c5530;
+  font-size: 1.1em;
+}
+
+.team-input input[type="text"] {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  text-align: center;
+  width: 180px;
+  transition: border-color 0.3s;
+  background: white;
+}
+
+.team-input input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+.team-input input[type="text"]::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
 .scorecard {
   margin: 30px 0;
   overflow-x: auto;
@@ -100,6 +143,18 @@ tr:hover {
   font-weight: bold;
   color: #27ae60;
   font-size: 1.1em;
+}
+
+.runs-row {
+  background: #27ae60 !important;
+  color: white;
+  font-weight: bold;
+}
+
+.runs-row td {
+  padding: 15px 10px;
+  font-size: 1.1em;
+  border-bottom: 1px solid #2c3e50;
 }
 
 .totals {
